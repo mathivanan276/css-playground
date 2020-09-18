@@ -1,0 +1,51 @@
+.piano{
+    width: 800px;
+    height: 500px;
+    display: flex;
+}
+.key{
+    height: 100%;
+    width: 100px;
+    background: linear-gradient(180deg,rgb(207, 207, 207),#fff);
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+.key:hover{
+    border: 3px solid rgb(43, 157, 209);
+    box-sizing: border-box;
+}
+.black-key{
+    position: fixed;
+    height: 300px;
+    width: 50px;
+    background: linear-gradient(180deg,rgb(73, 73, 73),rgb(92, 92, 92));
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.black-key:hover{
+    border: 3px solid rgb(255, 101, 81);
+    box-sizing: border-box;
+}
+.key-1{
+    top: 8px;
+    left: 80px;
+}
+.key-2{
+    top: 8px;
+    left: 184px;
+}
+.key-3{
+    top: 8px;
+    left: 390px;
+}
+.key-4{
+    top: 8px;
+    left: 490px;
+}
+.key-5{
+    top: 8px;
+    left: 595px;
+}

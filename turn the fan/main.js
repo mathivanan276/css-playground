@@ -1,5 +1,4 @@
 const input = document.getElementById("speed");
-
 const changeSpeed = () => {
     console.log(input.value);
     const wings = document.getElementById("wings");
