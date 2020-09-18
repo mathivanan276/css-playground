@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+.ball{
+    position: absolute;
+    margin: auto;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background-color: white;
+}
+.buttons{
+    height: 100vh;
+}
+.buttons button{
+    padding:10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+}
+
+.buttons #top{
+    position: absolute;
+    top:1%;
+    left: 45%;
+}
+.buttons #left{
+    position: absolute;
+    top: 45%;
+    left: 1%;
+}
+.buttons #right{
+    position: absolute;
+    top: 45%;
+    right: 1%;
+}
+.buttons #bottom{
+    position: absolute;
+    bottom: 1%;
+    left: 45%; 
+}

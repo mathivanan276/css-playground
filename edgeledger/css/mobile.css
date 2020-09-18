@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* mobile first method */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+
+.text-success{
+    color: rgb(91, 197, 21);
+}
+
+body{
+    font-family: "Roboto";
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    background-color: rgb(59, 153, 35);
+    padding: 0.5rem;
+}
+
+/* header */
+
+#header{
+    background-color: #333;
+    top:0;
+    color: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+#header h1{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+}
+
+#header ul li {
+    justify-self: center;
+    list-style: none;
+    padding: 1rem;
+}
+#header ul li a {
+    color: white;
+}
+
+/* showcase */
+
+#showcase{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image_resources/showcase.jpg');
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.showcase h1{
+    font-size: 2rem;
+    color: rgb(235, 233, 233);
+}
+
+.showcase p {
+    color:rgb(235, 233, 233);
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.75rem;
+}
+
+.showcase .btn {
+    border-radius: 0.25rem;
+    color: rgb(235, 233, 233);
+}
+
+/* what */
+#what{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d0d0d0;
+    height: max-content;
+}
+
+.what h1{
+    text-align: center;
+    margin:1.5rem auto;
+    font-size: 2.5rem;
+}
+
+.what-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0px;
+}
+
+.what-boxes i{
+    background-color: #549901;
+    padding:1rem;
+    border-radius: 50%;
+}
+
+.what-boxes h3{
+    text-align: center;
+    margin: 1rem;
+}
+
+.what-boxes p{
+    margin: 0px 2rem;
+    text-align: justify;
+    font-size: 0.75rem;
+}

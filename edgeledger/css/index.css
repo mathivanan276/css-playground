@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* widescreen */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 1.2rem;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.text-success{
+    color: rgb(77, 182, 7);
+}
+
+.btn{
+    background-color: rgb(59, 153, 35);
+    padding: 0.5rem;
+}
+
+/* header */
+
+#header{
+    background-color: #333;
+    color: white;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+#header h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header ul li {
+    list-style: none;
+    padding: 0.75rem;
+    align-self: center;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+}
+
+#header ul li:hover{
+    background-color: rgba(91, 197, 21, 0.89);
+    color: white;
+}
+
+#header ul li a {
+    color: white;
+}
+
+/* showcase */
+
+#showcase{
+    height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../image_resources/showcase.jpg');
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+}
+
+.showcase h1{
+    font-size: 3rem;
+    color: rgb(235, 233, 233);
+    padding-bottom: 2rem;
+}
+
+.showcase p {
+    color:rgb(235, 233, 233);
+    text-align: center;
+    margin: 0.75rem 6rem;
+}
+
+.showcase .btn {
+    border-radius: 0.25rem;
+    color: rgb(235, 233, 233);
+}
+.showcase .btn:hover{
+    background-color: #4b662b;
+}
+/* what */
+#what{
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d0d0d0;
+}
+.what h1{
+    text-align: center;
+    margin:1.5rem auto;
+    font-size: 2.5rem;
+}
+
+.what-boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0px;
+}
+
+.what-boxes i{
+    background-color: #549901;
+    padding:1rem;
+    border-radius: 50%;
+}
+
+.what-boxes h3{
+    text-align: center;
+    margin: 1rem;
+}
+
+.what-boxes p{
+    margin: 0px 2rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
