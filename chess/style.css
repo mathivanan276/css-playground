@@ -1,0 +1,75 @@
+body{
+    --player1-peice: #ffae00;
+    --player2-peice: #3bf02a;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.fas{
+    font-size: 2rem;
+    align-self: center;
+}
+
+.iw{
+    color: white;
+}
+
+.chessboard{
+    margin: 2rem auto;
+    width: 420px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    border: 10px solid #fa7b32;
+}
+
+.column-even{
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    transition: translate 0.5s ease-in-out;
+}
+.column-even div{
+    width: 50px;
+    height: 50px;
+    background-color: #ffca84;
+    display: grid;
+    justify-items: center;
+}
+.column-even div:nth-child(even){
+    background-color: #a05500;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-items: center;
+}
+
+.column-odd{
+    display: grid;
+    grid-template-rows: repeat(8,1fr);
+    display: grid;
+    justify-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+.column-odd div{
+    width: 50px;
+    height: 50px;
+    background-color: #ffca84;
+    display: grid;
+    justify-items: center;
+}
+.column-odd div:nth-child(odd){
+    background-color: #a05500;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    justify-items: center;
+}
+.column-even div:hover,
+.column-odd div:hover{
+    border: 2px solid green;
+}
+
+.active {
+    background-color: rgb(8, 230, 8) !important;
+}

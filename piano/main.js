@@ -13,6 +13,10 @@ function sound(src) {
     }    
 }
 
+document.addEventListener("keydown",(e)=>{
+	new sound('./assets/tones/C.wav').play();
+})
+
 const play = (key) => {
     switch(key){
         case 'C' : 

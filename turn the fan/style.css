@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 .wings{
-    position: fixed;
+    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
@@ -15,7 +15,7 @@ body{
     height: 100px;
     background-color: white;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
@@ -26,7 +26,7 @@ body{
 .blade1{
     width: 500px;
     height: 80px;
-    position: fixed;
+    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
@@ -37,7 +37,7 @@ body{
 .blade2{
     width: 500px;
     height: 80px;
-    position: fixed;
+    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
@@ -48,7 +48,7 @@ body{
 .blade3{
     width: 500px;
     height: 80px;
-    position: fixed;
+    position: absolute;
     margin: auto;
     top: 0;
     right: 0;
@@ -89,3 +89,15 @@ body{
     background: #000;
     cursor: pointer;
   }
+/* 
+  @media only screen and (max-width:500px){
+      .blade1 {
+          margin: auto;
+      }
+      .blade2 {
+        margin: auto;
+    }
+    .blade3 {
+        margin: auto;
+    }
+  } */

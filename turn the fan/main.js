@@ -4,3 +4,5 @@ const changeSpeed = () => {
     const wings = document.getElementById("wings");
     wings.style.animationDuration = input.value+'s';
 }
+
+console.dir(document);
