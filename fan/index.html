@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <style>
         #fan-container{
-            margin: auto;
+            margin: 2rem auto;
             width: fit-content;
         }
+        #fan-switch{
+            margin: auto;
+            width: fit-content;
+            z-index: 3;
+        }
         #fan{
-            animation: rotate 2s linear 0s infinite  forwards;
+            animation-duration: 2s ;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            transition: transform ease-in-out;
         }
         .fa-fan{
-            color: black;
+            position: relative;
+            color: #000000;
             font-size: 30rem;
         }
         @keyframes rotate {
@@ -25,11 +34,49 @@
                 transform: rotate(360deg);
             }
         }
+        @keyframes stop {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
     </style>
+    <script>
+        function fan(){
+            var fan = document.getElementById("fan");
+            var swtT = document.getElementById("switch-text");
+            let swt = document.getElementById("fan-switch").children[0];
+            if(fan.style.animationName === "rotate"){
+                fan.style.animationName = "stop";
+                fan.style.animationIterationCount = 1;
+                fan.style.animationDuration = "1s";
+                swt.className = "fas fa-toggle-off";
+                swtT.innerText = "Turn ON"
+            } else {
+                fan.style.animationName = "rotate";
+                fan.style.animationIterationCount = "infinite";
+                swtT.innerText = "Turn OFF"
+                swt.className = "fas fa-toggle-on"; 
+            }
+        }
+        function changecolor(e){
+            var fan = document.getElementById("fan");
+                fan.style.color = e.target.value;
+        }
+
+    </script>
 </head>
 <body>
     <div id="fan-container">
         <i id="fan" class="fas fa-fan"></i>
     </div>
+    <div id="fan-switch">
+        <i class="fas fa-toggle-off" style="font-size: 2rem;" onclick="fan()"></i>
+        <label id="switch-text">Turn ON</label>
+    </div>
+    <label for="fan-color">Change Color
+    <input type="color" name="fan-color" onchange={changecolor(event)} value="#ffffff"></label>
 </body>
 </html>
